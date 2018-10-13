@@ -68,11 +68,11 @@ Feature branches are used when developing a new feature or enhancement which has
 
 During the lifespan of the feature development, the lead should watch the `master` branch (network tool or branch tool in GitHub) to see if there have been commits since the feature was branched. Any and all changes to `master` should be merged into the feature before merging back to `master`; this can be done at various times during the project or at the end, but time to handle merge conflicts should be accounted for.
 
-<issue number> represents the Github project issue number to which Project Management will be tracked. Issues can be features, bugs 
+[issue number] represents the Github project issue number to which Project Management will be tracked. Issues can be features, bugs 
 
 * Must branch from: `master`
 * Must merge back into: `master`
-* Branch naming convention: `feature-<issue number>`
+* Branch naming convention: `feature-[issue number]`
 
 #### Working with a feature branch
 
@@ -104,11 +104,11 @@ Bug branches differ from feature branches only semantically. Bug branches will b
 
 Although likelihood will be less, during the lifespan of the bug development, the lead should watch the `master` branch (network tool or branch tool in GitHub) to see if there have been commits since the bug was branched. Any and all changes to `master` should be merged into the bug before merging back to `master`; this can be done at various times during the project or at the end, but time to handle merge conflicts should be accounted for.
 
-<issue number> represents the Github project issue number to which Project Management will be tracked. 
+[issue number] represents the Github project issue number to which Project Management will be tracked. 
 
 * Must branch from: `master`
 * Must merge back into: `master`
-* Branch naming convention: `bug-<issue number>`
+* Branch naming convention: `bug-[issue number]`
 
 #### Working with a bug branch
 
@@ -141,11 +141,11 @@ A hotfix branch comes from the need to act immediately upon an undesired state o
 * Development on the `master` branch can continue while the hotfix is being addressed.
 * A tagged `stable` branch still represents what is in production. At the point in time where a hotfix is needed, there could have been multiple commits to `master` which would then no longer represent production.
 
-<issue number> represents the Github project issue number to which Project Management will be tracked. 
+[issue number] represents the Github project issue number to which Project Management will be tracked. 
 
 * Must branch from: tagged `stable`
 * Must merge back into: `master` and `stable`
-* Branch naming convention: `hotfix-<issue number>`
+* Branch naming convention: `hotfix-[issue number]`
 
 #### Working with a hotfix branch
 
